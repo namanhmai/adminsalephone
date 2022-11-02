@@ -1,0 +1,7 @@
+.Categories{
+  background-color: aqua ;
+
+}
+.Categories > h1{
+  color:red;
+}

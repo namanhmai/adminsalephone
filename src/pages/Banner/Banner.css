@@ -1,0 +1,7 @@
+.Banner{
+  background-color: aqua ;
+
+}
+.Banner > h1{
+  color:red;
+}
