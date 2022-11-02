@@ -6,6 +6,28 @@
     box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
     border-radius: 10px;
     height: 100px;
+}
+.Widget > .left,.Widget > .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Widget > .left > .title{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(160,160,60);
+}
 
-
+.Widget > .left > .counter{
+    font-size: 28px;
+    font-weight: 300;
+}
+.Widget > .left > .link{
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+}
+.Widget > .right > .percentage{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
 }
