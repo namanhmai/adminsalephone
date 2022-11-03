@@ -1,57 +1,67 @@
+import {PureComponent} from "react";
+import Paper from '@mui/material/Paper';
 import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    BarElement,
+    Chart,
+    BarSeries,
     Title,
+    ArgumentAxis,
+    ValueAxis,
     Tooltip,
-    Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import faker from 'faker';
+} from '@devexpress/dx-react-chart-material-ui';
+import { Animation } from '@devexpress/dx-react-chart';
+import { EventTracker } from '@devexpress/dx-react-chart';
+import "./Chart.css"
 
 
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend
-);
+const data = [
+    { month: 'Tháng 1', profit: 1400000 },
+    { month: 'Tháng 2', profit: 1300000 },
+    { month: 'Tháng 3', profit: 1200000 },
+    { month: 'Tháng 4', profit: 1500000 },
+    { month: 'Tháng 5', profit: 1600000 },
+    { month: 'Tháng 6', profit: 1100000 },
+    { month: 'Tháng 7', profit: 1400000 },
+    { month: 'Tháng 8', profit: 3000000 },
+    { month: 'Tháng 9', profit: 1400000 },
+    { month: 'Tháng 10', profit: 2000000 },
+    { month: 'Tháng 11', profit: 3400000},
+    { month: 'Tháng 12', profit: 12100000 },
+];
+class Charts extends PureComponent{
+    constructor(props) {
+        super(props);
 
-export const options = {
-    responsive: true,
-    plugins: {
-        legend: {
-            position: 'top',
-        },
-        title: {
-            display: true,
-            text: 'Thu nhập trong tháng',
-        },
-    },
-};
+        this.state = {
+            data,
+            targetItem: undefined,
+        };
 
-const labels = ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7','Tháng 8','Tháng 9','Tháng 10','Tháng 11','Tháng 12'];
+        this.changeTargetItem = targetItem => this.setState({ targetItem });
+    }
 
-export const data = {
-    labels,
-    datasets: [
-        {
-            label: 'Thu nhập',
-            data: [100,134,354,343,212,657,232,547,245,434,5466,236],
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
-        },
-        // {
-        //     label: 'Dataset 2',
-        //     data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-        //     backgroundColor: 'rgba(53, 162, 235, 0.5)',
-        // },
-    ],
-};
-const Chart = () =>{
-    return <Bar options={options} data={data} />;
+    render() {
+        const { data: chartData,targetItem } = this.state;
+        return (
+            <Paper>
+                <Chart
+                    data={chartData}
+                    height = {400}
+                >
+                    <ArgumentAxis />
+                    <ValueAxis max={100000000} />
+
+                    <BarSeries
+                        valueField="profit"
+                        argumentField="month"
+                    />
+                    <Title text="Thống kê thu nhập" />
+                    <Animation />
+                    <EventTracker />
+                    <Tooltip targetItem={targetItem}  />
+                </Chart>
+            </Paper>
+        );
+    }
 
 }
-export default Chart;
+export default Charts;

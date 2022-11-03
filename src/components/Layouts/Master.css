@@ -1,0 +1,7 @@
+.Master{
+    display: flex;
+}
+.Master > .MasterContainer{
+    flex: 6;
+}
+
