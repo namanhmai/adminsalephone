@@ -31,3 +31,19 @@
     align-items: center;
     font-size: 14px;
 }
+
+.Widget > .right > .percentage.positive{
+    color: green;
+}
+
+.Widget > .right > .percentage.negative{
+    color: red;
+}
+
+.Widget > .right >.icon{
+    font-size: 30px;
+    padding: 5px;
+    /*background-color: rgba(128,0,128,0.541);*/
+    border-radius: 5px;
+    align-self: flex-end;
+}

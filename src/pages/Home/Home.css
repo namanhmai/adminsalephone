@@ -10,3 +10,10 @@
     padding: 20px;
     gap: 20px;
 }
+
+.Home > .homContainer > .charts{
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 15px auto;
+
+}
