@@ -1,6 +1,7 @@
-const Heading = () => {
+const Heading = props => {
+    const {namePage} = props;
     return (
-      <h2 className="Heading">Trang chủ</h2>
+      <h2 className="Heading">{namePage}</h2>
     );
 }
 export default Heading;

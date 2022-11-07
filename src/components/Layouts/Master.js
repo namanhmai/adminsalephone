@@ -8,13 +8,14 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumb";
 const Master = props => {
     const {
         children,
+        title = '',
     } = props;
     return(
         <div className="Master">
             <Sidebar />
             <div className="MasterContainer">
                 <Navbar />
-                <Breadcrumbs />
+                <Breadcrumbs pageName={title} />
                 {children}
 
             </div>

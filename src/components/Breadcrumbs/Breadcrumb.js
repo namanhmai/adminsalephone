@@ -18,7 +18,7 @@ const Breakcrumbs = props =>{
     } = props
     return (
         <div role="presentation" onClick={handleClick} className="Breakcrumbs">
-            <Heading />
+            <Heading title={namePage}/>
             <Breadcrumbs aria-label="breadcrumb" className="custom-breakcrumbs">
 
                 <Link
@@ -28,7 +28,7 @@ const Breakcrumbs = props =>{
                     href="/"
                 >
                     <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-                    Trang chủ
+                    {namePage}
                 </Link>
                 {/*<Link*/}
                 {/*    underline="hover"*/}

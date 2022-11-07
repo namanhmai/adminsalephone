@@ -5,7 +5,7 @@
     justify-content: space-between;
     box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
     border-radius: 10px;
-    height: 100px;
+    height: 140px;
 }
 .Widget > .left,.Widget > .right{
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .Widget > .left > .counter{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 300;
 }
 .Widget > .left > .link{

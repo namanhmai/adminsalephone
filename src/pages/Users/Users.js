@@ -1,10 +1,11 @@
 import React from "react";
 import './Users.css'
+import Master from "../../components/Layouts/Master";
 
 const Users = () =>{
     return(
         <div className="Users">
-            <h1>Users</h1>
+
         </div>
     );
 }

@@ -6,9 +6,14 @@ import CateAdd from "../pages/Categories/components/Add/CateAdd";
 import Banner from "../pages/Banner/Banner";
 import Products from "../pages/Products/Products";
 import Orders from "../pages/Orders/Orders";
-import Users from "../pages/Users/Users";
 import Roles from "../pages/Roles/Roles";
 import React from "react";
+import UserList from "../pages/Users/components/List/UserList";
+import UserSing from "../pages/Users/components/Single/UserSing";
+import UserAdd from "../pages/Users/components/Add/UserAdd";
+import ProductList from "../pages/Products/components/List/ProductList";
+import ProductSing from "../pages/Products/components/Single/ProductSing";
+import ProductAdd from "../pages/Products/components/Add/ProductAdd";
 
 function RoutesAdmin(){
     return(
@@ -24,23 +29,22 @@ function RoutesAdmin(){
                     <Route path="banner" element={<Banner />} />
                     <Route path="products" element={<Products />} />
                     <Route path="orders" element={<Orders />} />
-                    <Route path="users" element={<Users />} />
                     <Route path="roles" element={<Roles />} />
-                    {/*<Route path="products">*/}
-                    {/*    <Route index element={<ProductList />} />*/}
-                    {/*    <Route path=":cateId" element={<ProductSing />} />*/}
-                    {/*    <Route path="add" element={<ProductAdd />} />*/}
-                    {/*</Route>*/}
+                    <Route path="products">
+                        <Route index element={<ProductList />} />
+                        <Route path=":prodId" element={<ProductSing />} />
+                        <Route path="add" element={<ProductAdd />} />
+                    </Route>
                     {/*<Route path="orders">*/}
                     {/*    <Route index element={<OrderList />} />*/}
                     {/*    <Route path=":cateId" element={<OrderSing />} />*/}
                     {/*    <Route path="add" element={<OrderAdd />} />*/}
                     {/*</Route>*/}
-                    {/*<Route path="users">*/}
-                    {/*    <Route index element={<UserList />} />*/}
-                    {/*    <Route path=":cateId" element={<UserSing />} />*/}
-                    {/*    <Route path="add" element={<UserAdd />} />*/}
-                    {/*</Route>*/}
+                    <Route path="users">
+                        <Route index element={<UserList />} />
+                        <Route path=":userId" element={<UserSing />} />
+                        <Route path="add" element={<UserAdd />} />
+                    </Route>
                     {/*<Route path="roles">*/}
                     {/*    <Route index element={<RoleList />} />*/}
                     {/*    <Route path=":cateId" element={<RoleSing />} />*/}
