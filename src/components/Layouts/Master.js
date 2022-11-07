@@ -3,22 +3,25 @@ import Navbar from "../Navbar/Navbar";
 import React from "react";
 import PropTypes from "prop-types";
 import "./Master.css"
+import Breadcrumbs from "../Breadcrumbs/Breadcrumb";
+
 const Master = props => {
-    const { children,namePage } = props;
+    const {
+        children,
+    } = props;
     return(
         <div className="Master">
             <Sidebar />
-            {/*<h2 className="title">{namePage}</h2>*/}
             <div className="MasterContainer">
                 <Navbar />
-
+                <Breadcrumbs />
                 {children}
 
             </div>
         </div>
     )
 }
-Master.protoType = {
+Master.propType = {
     children:PropTypes.element,
     namePage:PropTypes.string.isRequired
 }

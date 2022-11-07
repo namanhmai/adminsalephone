@@ -1,0 +1,12 @@
+.Breakcrumbs{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.Breakcrumbs > .custom-breakcrumbs{
+    /*justify-content: flex-end;*/
+
+}
+.Breakcrumbs > .custom-breakcrumbs > ol{
+    justify-content: space-between;
+}
