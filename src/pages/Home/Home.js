@@ -34,7 +34,7 @@ import './Home.css'
 
 const Home = () => {
     return (
-        <Master namePage = "Trang chủ">
+        <Master namePage = {"Trang chủ"}>
             <div className="Home">
                 <div className="widgets">
                     <Widget type="user"/>

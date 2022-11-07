@@ -4,14 +4,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Master.css"
 const Master = props => {
-    const {
-        children,
-        namePage = ''
-    } = props
+    const { children,namePage } = props;
     return(
         <div className="Master">
             <Sidebar />
-            <h2 className="title">{{namePage}}</h2>
+            {/*<h2 className="title">{namePage}</h2>*/}
             <div className="MasterContainer">
                 <Navbar />
 
