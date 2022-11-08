@@ -10,7 +10,7 @@ const ProductList = () =>{
         <Master title="Danh sách sản phẩm" url="/product">
             <div className="ProdList">
                 <div className="btn-add-block">
-                    <Button variant="contained" href="/product/add" className="btn-add">
+                    <Button variant="contained" href="/products/add" className="btn-add">
                         Thêm mới
                     </Button>
                 </div>

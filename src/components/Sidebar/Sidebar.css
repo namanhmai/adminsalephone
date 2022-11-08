@@ -14,7 +14,7 @@
 }
 
 .Sidebar > .top > h1{
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
     color: #6439ff;
 }
@@ -24,6 +24,7 @@
 }
 .Sidebar > .center {
     padding-left: 10px;
+    padding-right: 10px;
 }
 .Sidebar > .center > ul{
     list-style: none;
@@ -39,8 +40,8 @@
 .Sidebar > .center > ul >li:hover{
     background-color: #ece8ff;
 }
-.Sidebar > .title{
-    font-size: 10px;
+.Sidebar > .center > ul> .title{
+    font-size: 20px;
     font-weight: bold;
     color: #999;
     margin-top: 15px;
@@ -51,7 +52,7 @@
     color: #7451f8
 }
 .Sidebar > .center > ul >li > a{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     color: #888;
     margin-left: 10px;
