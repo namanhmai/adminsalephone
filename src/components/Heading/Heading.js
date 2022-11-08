@@ -1,7 +1,12 @@
+import PropTypes from "prop-types";
+
 const Heading = props => {
-    const {namePage} = props;
+    const {nameHeading} = props;
     return (
-      <h2 className="Heading">{namePage}</h2>
+      <h2 className="Heading">{nameHeading}</h2>
     );
+}
+Heading.propType = {
+    nameHeading:PropTypes.string.isRequired
 }
 export default Heading;

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
-import HomeIcon from '@mui/icons-material/Home';
+// import HomeIcon from '@mui/icons-material/Home';
 import "./Breadcrumb.css"
 import Heading from "../Heading/Heading";
 import PropTypes from "prop-types";
@@ -13,12 +13,13 @@ function handleClick(event) {
 }
 const Breakcrumbs = props =>{
     const {
-        namePage = '',
+        nameBreakcrumbs = '',
+        url = '',
 
     } = props
     return (
         <div role="presentation" onClick={handleClick} className="Breakcrumbs">
-            <Heading title={namePage}/>
+            <Heading nameHeading={nameBreakcrumbs}/>
             <Breadcrumbs aria-label="breadcrumb" className="custom-breakcrumbs">
 
                 <Link
@@ -27,18 +28,16 @@ const Breakcrumbs = props =>{
                     color="inherit"
                     href="/"
                 >
-                    <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-                    {namePage}
+                    Home
                 </Link>
-                {/*<Link*/}
-                {/*    underline="hover"*/}
-                {/*    sx={{ display: 'flex', alignItems: 'center' }}*/}
-                {/*    color="inherit"*/}
-                {/*    href="Home/xyz"*/}
-                {/*>*/}
-                {/*    <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />*/}
-                {/*    Core*/}
-                {/*</Link>*/}
+                <Link
+                    underline="hover"
+                    sx={{ display: 'flex', alignItems: 'center' }}
+                    color="inherit"
+                    href={url}
+                >
+                    {nameBreakcrumbs}
+                </Link>
                 {/*<Typography*/}
                 {/*    sx={{ display: 'flex', alignItems: 'center' }}*/}
                 {/*    color="text.primary"*/}
@@ -50,8 +49,10 @@ const Breakcrumbs = props =>{
         </div>
     );
 }
-export default Breakcrumbs;
 
 Breakcrumbs.propType = {
-    namePage:PropTypes.string.isRequired
+    nameBreakcrumbs:PropTypes.string.isRequired,
+    url:PropTypes.string.isRequired,
 }
+
+export default Breakcrumbs;

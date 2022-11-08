@@ -1,15 +1,22 @@
 import {Button} from "@mui/material";
 import Master from "../../../../components/Layouts/Master";
 import React from "react";
+import "./ProductList.css"
+import TableProd from "../../Template/TableProd";
+
 
 const ProductList = () =>{
     return(
-        <Master title="Danh sách sản phẩm">
+        <Master title="Danh sách sản phẩm" url="/product">
             <div className="ProdList">
-                <Button variant="contained" href="/categories/add" className="btn-add">
-                    Thêm mới
-                </Button>
-
+                <div className="btn-add-block">
+                    <Button variant="contained" href="/product/add" className="btn-add">
+                        Thêm mới
+                    </Button>
+                </div>
+                <div className="table-list">
+                    <TableProd />
+                </div>
             </div>
         </Master>
     )

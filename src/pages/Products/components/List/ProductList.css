@@ -1,0 +1,13 @@
+.ProdList{
+    padding: 20px;
+}
+
+.ProdList > .btn-add-block {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.table-list{
+    max-width: 75%;
+}

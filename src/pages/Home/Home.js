@@ -31,10 +31,12 @@ import Master from "../../components/Layouts/Master";
 import Chart from "../../components/Chart/Chart";
 import './Home.css'
 
-
 const Home = () => {
     return (
-        <Master namePage = {"Trang chủ"}>
+        <Master
+            title = {"Trang chủ"}
+            url="/"
+        >
             <div className="Home">
                 <div className="widgets">
                     <Widget type="user"/>

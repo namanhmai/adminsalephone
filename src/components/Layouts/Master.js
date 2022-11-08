@@ -15,7 +15,7 @@ const Master = props => {
             <Sidebar />
             <div className="MasterContainer">
                 <Navbar />
-                <Breadcrumbs pageName={title} />
+                <Breadcrumbs nameBreakcrumbs={title} />
                 {children}
 
             </div>
@@ -24,6 +24,6 @@ const Master = props => {
 }
 Master.propType = {
     children:PropTypes.element,
-    namePage:PropTypes.string.isRequired
+    title:PropTypes.string.isRequired
 }
 export default Master
