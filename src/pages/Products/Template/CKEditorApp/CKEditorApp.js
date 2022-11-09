@@ -6,10 +6,8 @@ import "./CKEditorApp.css"
 class CKEditorApp extends Component {
     render() {
         return (
-
-
                 <CKEditor
-                    editor={ ClassicEditor }
+                    editor={ ClassicEditor}
                     data=""
                     onReady={ editor => {
                         // You can store the "editor" and use when it is needed.

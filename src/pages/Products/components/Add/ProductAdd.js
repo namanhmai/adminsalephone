@@ -44,6 +44,7 @@ const ProductAdd = () =>{
                                 id="outlined-required"
                                 label="Giá"
                                 className="form-control"
+                                type={"number"}
                             />
                         </div>
                         <div className="right">
@@ -52,7 +53,9 @@ const ProductAdd = () =>{
                     <div className="ckeditor" >
                         <CKEditorApp />
                     </div>
-
+                    <div className="mt-5">
+                        <input type='submit' className="btn btn-submit p-10-35 b-none"/>
+                    </div>
                 </Box>
             </div>
         </Master>
