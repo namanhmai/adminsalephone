@@ -2,7 +2,7 @@ import {Button} from "@mui/material";
 import Master from "../../../../components/Layouts/Master";
 import React from "react";
 import "./ProductList.css"
-import TableProd from "../../Template/TableProd";
+import TableProd from "../../Template/Datatable/TableProd";
 
 
 const ProductList = () =>{

@@ -4,7 +4,6 @@ import CateList from "../pages/Categories/components/List/CateList";
 import CateSing from "../pages/Categories/components/Single/CateSing";
 import CateAdd from "../pages/Categories/components/Add/CateAdd";
 import Banner from "../pages/Banner/Banner";
-import Products from "../pages/Products/Products";
 import Orders from "../pages/Orders/Orders";
 import Roles from "../pages/Roles/Roles";
 import React from "react";
@@ -27,13 +26,13 @@ function RoutesAdmin(){
                         <Route path="add" element={<CateAdd />} />
                     </Route>
                     <Route path="banner" element={<Banner />} />
-                    <Route path="products" element={<Products />} />
                     <Route path="orders" element={<Orders />} />
                     <Route path="roles" element={<Roles />} />
                     <Route path="products">
                         <Route index element={<ProductList />} />
                         <Route path=":prodId" element={<ProductSing />} />
                         <Route path="add" element={<ProductAdd />} />
+                        <Route path="edit/:prodId" element={<ProductAdd />} />
                     </Route>
                     {/*<Route path="orders">*/}
                     {/*    <Route index element={<OrderList />} />*/}

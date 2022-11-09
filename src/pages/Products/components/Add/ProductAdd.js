@@ -1,33 +1,57 @@
 import Master from "../../../../components/Layouts/Master";
-import {Box} from "@mui/material";
 import "./ProductAdd.css"
-import {Grid} from "@material-ui/core";
+import {Box} from "@material-ui/core";
+import {TextField} from "@mui/material";
+import CateSelect from "../../Template/CategorySelect/CateSelect";
+import Upload from "../../Template/UploadImage/Upload";
+import CKEditorApp from "../../Template/CKEditorApp/CKEditorApp";
 
-function Item() {
-    return null;
-}
 
 const ProductAdd = () =>{
     return(
         <Master title={"Thêm sản phẩm"} url={"products/add"}>
             <div className="ProductAdd">
-                <Box
-                    component="form"
-                    sx={{
-                        '& .MuiTextField-root': { m: 1, width: '25ch' },
-                    }}
-                    noValidate
-                    autoComplete="off"
-                >
-                    <Grid container spacing={2} columns={16}>
-                        <Grid item xs={6}>
-                            <Item>
-                            </Item>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <Item>xs=8</Item>
-                        </Grid>
-                    </Grid>
+                <Box component="form">
+                    <div className="form-group">
+                        <div className="left">
+
+                            <TextField
+                                required
+                                id="outlined-required"
+                                label="Tiêu đề"
+                                className="form-control"
+                            />
+
+                        </div>
+                        <div className="right">
+                            <CateSelect />
+
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <div className="left">
+                            <Upload />
+                        </div>
+                        <div className="right">
+
+
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <div className="left">
+                            <TextField
+                                required
+                                id="outlined-required"
+                                label="Giá"
+                                className="form-control"
+                            />
+                        </div>
+                        <div className="right">
+                        </div>
+                    </div>
+                    <div className="ckeditor" >
+                        <CKEditorApp />
+                    </div>
 
                 </Box>
             </div>
