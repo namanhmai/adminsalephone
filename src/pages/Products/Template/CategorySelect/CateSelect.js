@@ -56,6 +56,7 @@ const CateSelect = () => {
                     onChange={handleChange}
                     input={<OutlinedInput label="Chuyên mục" />}
                     MenuProps={MenuProps}
+                    name={"category_id"}
                 >
                     {names.map((name) => (
                         <MenuItem

@@ -13,6 +13,11 @@
     flex: 1;
     margin-right: 10px;
 }
+.ProductAdd .form-group:nth-child(2) .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .ProductAdd .form-group .right{
     flex: 1;
 }
@@ -26,6 +31,8 @@
 
 .btn-submit{
     background-color: #7451f8;
+    color:whitesmoke;
+    font-size: 18px;
 }
 
 .p-10-35{
@@ -34,4 +41,17 @@
 
 .b-none{
     border: none;
+}
+
+.ProductAdd .form-label{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+}
+
+.ProductAdd .db{
+    display: block;
 }

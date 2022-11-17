@@ -11,7 +11,8 @@ const TableProd = () => {
         {
             field: 'action',
             headerName: 'Action',
-            width: 300,
+            width: 450,
+
             renderCell:(params) => {
             return(
                 <div className="cellAction">
