@@ -13,24 +13,11 @@
     margin-right:20px ;
     object-fit: cover;
 }
-.btn{
-    display: inline-block;
-    padding: 5px 10px;
-    color: whitesmoke;
-    text-decoration: none;
-    margin-right: 5px;
-    border-radius: 10%;
 
+.datatable .ProdAddBtn{
+    margin-right: 5px;
 }
-.btn:last-child{
-    margin-right: 0;
-}
-.btn-success{
-    background-color: #2d72be;
-}
-.btn-warning{
-    background-color: #cdcd28;
-}
-.btn-danger{
-    background-color: #ad3838;
+
+.datatable .ProdAddBtn:last-child{
+    margin-right: 0px;
 }

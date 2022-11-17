@@ -5,6 +5,7 @@ import "./Upload.css"
 
 
 class Upload extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -31,7 +32,7 @@ class Upload extends Component {
             <div>
                 <div>
                     <div>
-                        <img src={this.state.image} className="anh-dai-dien"/>
+                        <img src={this.state.image} className="anh-dai-dien" alt=""/>
                         {/*<input type="file" name="myImage" onChange={this.onImageChange} />*/}
 
                         <IconButton color="primary" aria-label="upload picture" component="label">

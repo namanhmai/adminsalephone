@@ -1,22 +1,23 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import {productColumn,productRow} from "../../../productsResource"
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 import "./TableProd.css"
+import {Button} from "@mui/material";
 const TableProd = () => {
     const actionColumn = [
         {
             field: 'action',
             headerName: 'Action',
-            width: 200,
+            width: 300,
             renderCell:(params) => {
             return(
                 <div className="cellAction">
-                    <a href={'products/'+ params.id} className="btn btn-success">Detail</a>
-                    <a href={'products/edit/'+ params.id} className="btn btn-warning">Edit</a>
-                    <a href={'products/delete/'+ params.id} className="btn btn-danger">Delete</a>
-                    {/*<div className="viewButton">View</div>*/}
-                    {/*<div className="warningButton">Edit</div>*/}
-                    {/*<div className="deleteButton">Delete</div>*/}
+                    <Button variant="contained" href={'products/'+ params.id} color="primary" className="ProdAddBtn"><ListAltIcon /></Button>
+                    <Button variant="contained" href={'products/edit/'+ params.id} color="success" className="ProdAddBtn"><EditIcon /></Button>
+                    <Button variant="contained" href={'products/delete/'+ params.id} color="error" className="ProdAddBtn"><DeleteIcon /></Button>
                 </div>
             )
     }

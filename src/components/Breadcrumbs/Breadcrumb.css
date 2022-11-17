@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background: whitesmoke;
+    color: #888;
 }
 .Breakcrumbs > .custom-breakcrumbs{
     /*justify-content: flex-end;*/

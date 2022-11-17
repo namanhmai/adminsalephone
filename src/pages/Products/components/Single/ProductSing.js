@@ -1,6 +1,12 @@
-const CateSing = () =>{
+import Master from "../../../../components/Layouts/Master";
+import "./ProductSing.css"
+const ProductSing = () =>{
     return(
-        <h1>Sing</h1>
+        <Master title="Chi tiết sản phẩm" url="/product/::prodId">
+            <div className="productSing">
+                bvbhsdbj
+            </div>
+        </Master>
     )
 }
-export default CateSing
+export default ProductSing
