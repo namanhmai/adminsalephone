@@ -7,7 +7,7 @@ class CKEditorApp extends Component {
         return (
             <CKEditor
                 editorUrl= "https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"
-
+                name="prod-description"
                 config={{
                 }}
 

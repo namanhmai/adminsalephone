@@ -6,6 +6,7 @@ import TableProd from "../../Template/Datatable/TableProd";
 
 
 const ProductList = () =>{
+
     return(
         <Master title="Danh sách sản phẩm" url="/product">
             <div className="ProdList">

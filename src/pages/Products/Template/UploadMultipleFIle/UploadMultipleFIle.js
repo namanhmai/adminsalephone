@@ -68,8 +68,8 @@ const UploadMutipleFile = (props) => {
     return (
         <section className="container multiple-upload">
             <div {...getRootProps({className: 'dropzone'})}>
-                <input {...getInputProps()} />
-                <p>Drag 'n' drop some files here, or click to select files</p>
+                <input {...getInputProps()} name="upload-image" />
+                <p>Kéo thả hoặc chọn file</p>
             </div>
             <aside style={thumbsContainer}>
                 {thumbs}

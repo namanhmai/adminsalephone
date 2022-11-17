@@ -30,7 +30,7 @@ const ProductAdd = () =>{
                     <div className="form-group">
                         <div className="left">
                             <label className="form-label">
-                                Avatar
+                                Ảnh đại diện
                             </label>
                             <Upload />
                         </div>

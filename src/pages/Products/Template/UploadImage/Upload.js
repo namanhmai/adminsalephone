@@ -36,7 +36,7 @@ class Upload extends Component {
                         {/*<input type="file" name="myImage" onChange={this.onImageChange} />*/}
 
                         <IconButton color="primary" aria-label="upload picture" component="label">
-                            <input hidden accept="image/*" type="file" onChange={this.onImageChange} />
+                            <input hidden accept="image/*" type="file" name="upload" onChange={this.onImageChange} />
                             <FileUploadIcon className="icon"/>
                         </IconButton>
                     </div>
